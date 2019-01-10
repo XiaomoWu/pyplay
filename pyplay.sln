@@ -1,0 +1,27 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.27703.2047
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{888888A0-9F3D-457C-B088-3A5042F75D52}") = "00-test", "00-test\00-test.pyproj", "{2DDED1AB-D420-4D15-AC5A-7E015E4A5DF6}"
+EndProject
+Project("{888888A0-9F3D-457C-B088-3A5042F75D52}") = "01-NLP_with_DL", "01-NLP_with_DL\01-NLP_with_DL.pyproj", "{8725843E-70BC-4F32-8062-52A0197FD081}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{2DDED1AB-D420-4D15-AC5A-7E015E4A5DF6}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2DDED1AB-D420-4D15-AC5A-7E015E4A5DF6}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8725843E-70BC-4F32-8062-52A0197FD081}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8725843E-70BC-4F32-8062-52A0197FD081}.Release|Any CPU.ActiveCfg = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {B08530DA-C49E-412E-A6AF-8BCC2CE41ADB}
+	EndGlobalSection
+EndGlobal

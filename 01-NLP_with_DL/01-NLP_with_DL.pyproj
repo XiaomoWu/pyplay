@@ -1,0 +1,88 @@
+<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003" ToolsVersion="4.0">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>8725843e-70bc-4f32-8062-52a0197fd081</ProjectGuid>
+    <ProjectHome>.</ProjectHome>
+    <StartupFile>test.py</StartupFile>
+    <SearchPath>
+    </SearchPath>
+    <WorkingDirectory>.</WorkingDirectory>
+    <OutputPath>.</OutputPath>
+    <Name>01-NLP_with_DL</Name>
+    <RootNamespace>01-NLP_with_DL</RootNamespace>
+    <InterpreterId>Global|ContinuumAnalytics|Anaconda36-64</InterpreterId>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)' == 'Debug' ">
+    <DebugSymbols>true</DebugSymbols>
+    <EnableUnmanagedDebugging>false</EnableUnmanagedDebugging>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)' == 'Release' ">
+    <DebugSymbols>true</DebugSymbols>
+    <EnableUnmanagedDebugging>false</EnableUnmanagedDebugging>
+  </PropertyGroup>
+  <ItemGroup>
+    <Compile Include="bow_classifier.py" />
+    <Compile Include="brown.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="markov.py" />
+    <Compile Include="nlp_class2\bow_classifier.py" />
+    <Compile Include="nlp_class2\glove.py" />
+    <Compile Include="nlp_class2\glove_svd.py" />
+    <Compile Include="nlp_class2\glove_tf.py" />
+    <Compile Include="nlp_class2\glove_theano.py" />
+    <Compile Include="nlp_class2\logistic.py" />
+    <Compile Include="nlp_class2\markov.py" />
+    <Compile Include="nlp_class2\ner_baseline.py" />
+    <Compile Include="nlp_class2\ner_rnn.py" />
+    <Compile Include="nlp_class2\ner_tf.py" />
+    <Compile Include="nlp_class2\neural_network.py" />
+    <Compile Include="nlp_class2\neural_network2.py" />
+    <Compile Include="nlp_class2\pmi.py" />
+    <Compile Include="nlp_class2\pos_baseline.py" />
+    <Compile Include="nlp_class2\pos_hmm.py" />
+    <Compile Include="nlp_class2\pos_ner_keras.py" />
+    <Compile Include="nlp_class2\pos_rnn.py" />
+    <Compile Include="nlp_class2\pos_tf.py" />
+    <Compile Include="nlp_class2\pretrained_glove.py" />
+    <Compile Include="nlp_class2\pretrained_w2v.py" />
+    <Compile Include="nlp_class2\recursive_tensorflow.py" />
+    <Compile Include="nlp_class2\recursive_theano.py" />
+    <Compile Include="nlp_class2\rntn_tensorflow.py" />
+    <Compile Include="nlp_class2\rntn_tensorflow_rnn.py" />
+    <Compile Include="nlp_class2\rntn_theano.py" />
+    <Compile Include="nlp_class2\tfidf_tsne.py" />
+    <Compile Include="nlp_class2\util.py" />
+    <Compile Include="nlp_class2\visualize_countries.py" />
+    <Compile Include="nlp_class2\word2vec.py" />
+    <Compile Include="nlp_class2\word2vec_tf.py" />
+    <Compile Include="nlp_class2\word2vec_theano.py" />
+    <Compile Include="pretrained_glove.py" />
+    <Compile Include="test.py">
+      <SubType>Code</SubType>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="large_files\" />
+    <Folder Include="nlp_class2\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="nlp_class2\extra_reading.txt" />
+    <Content Include="nlp_class2\ner.txt" />
+    <Content Include="nlp_class2\w2v_model.npz" />
+    <Content Include="nlp_class2\w2v_word2idx.json" />
+  </ItemGroup>
+  <ItemGroup>
+    <InterpreterReference Include="Global|ContinuumAnalytics|Anaconda36-64" />
+  </ItemGroup>
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)\Python Tools\Microsoft.PythonTools.targets" />
+  <!-- Uncomment the CoreCompile target to enable the Build command in
+       Visual Studio and specify your pre- and post-build commands in
+       the BeforeBuild and AfterBuild targets below. -->
+  <!--<Target Name="CoreCompile" />-->
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+</Project>
